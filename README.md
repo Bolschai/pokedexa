@@ -1,2 +1,0 @@
-# pokedexa
-Created with CodeSandbox

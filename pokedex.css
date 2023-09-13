@@ -1,0 +1,149 @@
+@keyframes pokemon-animation {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.pokemons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.pokemon:hover {
+  animation: pokemon-animation 0.3s;
+}
+
+.pokemon .number {
+  opacity: 0.3;
+  text-align: right;
+  font-size: 1rem;
+}
+
+.pokemon .name {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.pokemon .detail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.pokemon .detail .types {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.pokemon .detail .types .type {
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  cursor: pointer;
+  padding: .25rem 1rem;
+  font-size: 0.625rem;
+  border-radius: 1rem; 
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1); 
+  transition: box-shadow 0.3s;
+}
+
+.pokemon .detail .types .type:hover { 
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); 
+}
+
+.pokemon .detail img {
+  aspect-ratio: 1/1;
+  max-width: 75%;
+  height: auto;
+}
+
+.fire {
+  background-color: #fd7d24;
+}
+
+.poison {
+  background-color: #b97fc9;
+}
+
+.grass {
+  background-color: #9bcc50;
+}
+
+.water {
+  background-color: #4592c4;
+}
+
+.electric {
+  background-color: #eed535;
+}
+
+.normal {
+  background-color: #a4acaf;
+}
+
+.fairy {
+  background-color: #fdb9e9;
+}
+
+.bug {
+  background-color: #729f3f;
+}
+
+.fighting {
+  background-color: #d56723;
+}
+
+.psychic {
+  background-color: #f366b9;
+}
+
+.flying {
+  background-image: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
+
+.steel {
+  background-color: #9eb7b8; 
+}
+
+.ice {
+  background-color: #51c4e7;
+}
+
+.ghost {
+  background-color: #7b62a3;
+}
+
+.ground {
+  background-image: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+}
+
+.rock {
+  background-color: #a38c21;
+}
+
+.dragon {
+  background-image: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+}
+
+.dark {
+  background-color: #707070;
+}
+
+.guard {
+  height: 50px;
+}
+
